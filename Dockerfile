@@ -302,6 +302,7 @@ RUN jupyter nbextension enable python-markdown/main --sys-prefix && \
     jupyter serverextension enable --py jupyterlab_git && \
     jupyter labextension install @jupyterlab/toc && \
     jupyter labextension install jupyterlab-drawio && \
+    jupyter labextension install jupyterlab_vim && \
     npm cache clean --force && \
     rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
     rm -rf /home/$NB_USER/.cache/yarn && \
